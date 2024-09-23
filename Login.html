@@ -8,14 +8,32 @@
 </head>
 <body>
     <h1 class="title">Barrio</h1>
-    <div class="form-div">
+
+    <!-- Formulario de Registro -->
+    <div class="form-div" id="reg">
         <h2>Registrarse</h2>
         <form action="" class="form-reg">
             <input type="text" name="" id="" placeholder="Nombre de Usuario" class="txt-form">
-            <input type="text" name="" id="" placeholder="Correo Electronico" class = "txt-form">
+            <input type="text" name="" id="" placeholder="Correo Electronico" class="txt-form">
             <input type="password" name="" id="" placeholder="Contraseña" class="txt-form">
             <input type="button" value="Registrarse" class="button-form">
+            <hr>
+            <a href="#" onclick="habilitarLog()">¿Ya tienes cuenta? Inicia Sesión</a>
         </form>
     </div>
+
+    <!-- Formulario de Iniciar Sesión -->
+    <div class="form-log active" id="log">
+        <h2>Iniciar Sesión</h2>
+        <form action="" class="form-reg">
+            <input type="text" name="" id="" placeholder="Nombre de Usuario" class="txt-form">
+            <input type="text" name="" id="" placeholder="Correo Electronico" class="txt-form">
+            <input type="password" name="" id="" placeholder="Contraseña" class="txt-form">
+            <input type="button" value="Iniciar Sesión" class="button-form">
+            <hr>
+            <a href="#" onclick="habilitarReg()">¿No tienes cuenta? Regístrate</a>
+        </form>
+    </div>
+    <script src="JS/log-reg.js"></script>
 </body>
 </html>
